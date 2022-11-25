@@ -590,6 +590,12 @@ textarea {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: flex;
+    margin-left: 0;
+  }
+}
 
 .navigation__list {
   display: none;
@@ -603,7 +609,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .navigation__list {
     display: flex;
-    margin-left: auto;
+    margin-left: 0;
   }
 }
 
@@ -706,8 +712,8 @@ textarea {
 
 .mail {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   display: flex;
@@ -716,6 +722,12 @@ textarea {
 }
 .mail:hover, .mail:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .mail {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .mail__icon {
@@ -732,8 +744,8 @@ textarea {
 
 .tel {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   display: flex;
@@ -742,6 +754,12 @@ textarea {
 }
 .tel:hover, .tel:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .tel:hover, .tel:focus {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .tel__icon {
@@ -987,7 +1005,7 @@ textarea {
 }
 .team .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.1785714286;
   text-align: center;
@@ -998,6 +1016,7 @@ textarea {
   .team .section-title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -1104,12 +1123,13 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .customers-title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 

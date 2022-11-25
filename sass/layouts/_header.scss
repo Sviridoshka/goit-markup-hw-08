@@ -216,6 +216,11 @@
     display: flex;
     margin-left: auto;
   }
+
+  @include desktop {
+    display: flex;
+    margin-left: 0;
+  }
 }
 
 .navigation__list {
@@ -227,7 +232,7 @@
   }
   @include desktop {
     display: flex;
-    margin-left: auto;
+    margin-left: 0;
   }
 }
 
@@ -329,8 +334,8 @@
 
 .mail {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 
@@ -341,6 +346,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -358,8 +368,8 @@
 
 .tel {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 
@@ -370,6 +380,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 }
 
