@@ -26,6 +26,54 @@
           >Web<span class="logo__accent">Studio</span></a
         >
 
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close" data-menu-close>
+                <svg class="menu-close-icon" width="18px" height="18px">
+                  <use href="./img/icons.svg#icon-modal-close"></use>
+                </svg>
+              </button>
+
+              <ul class="mob-navigation-list list">
+                <li class="mob-navigation-item">
+                  <a class="mob-current link" href="./index.html">Студія</a>
+                </li>
+                <li class="mob-navigation-item">
+                  <a class="mob-navigation-link link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-navigation-item">
+                  <a class="mob-navigation-link link" href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mob-menu-bottom">
+              <ul class="mob-contact-list list">
+                <li class="mob-connect-item">
+                  <a class="mob-tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                </li>
+
+                <li class="mob-connect-item">
+                  <a class="mob-mail link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item"><a href="" class="mob-soc-link link">Instagram</a></li>
+                <li class="mob-soc-item"><a href="" class="mob-soc-link link">Twitter</a></li>
+                <li class="mob-soc-item"><a href="" class="mob-soc-link link">Facebook</a></li>
+                <li class="mob-soc-item"><a href="" class="mob-soc-link link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -77,7 +125,6 @@
 
       <section class="skills">
         <div class="container">
-          <!--це тимчасовий заголовок-->
           <h2 class="visually-hidden">Skills</h2>
 
           <ul class="skills__list list">
@@ -156,13 +203,28 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/img4.jpg"
-                alt="спеціалісти"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/img4.jpg 1x, ./img/img4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img4-tab.jpg 1x, ./img/img4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img4-mob.jpg 1x, ./img/img4-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./img/img4-mob.jpg"
+                  alt="спеціалісти"
+                  width="450"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-content">
                 <h3 class="title">Ігор Дем'яненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -223,13 +285,28 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/img5.jpg"
-                alt="спеціалісти"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/img5.jpg 1x, ./img/img5-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img5-tab.jpg 1x, ./img/img5-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img5-mob.jpg 1x, ./img/img5-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./img/img5-mob.jpg"
+                  alt="спеціалісти"
+                  width="450"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-content">
                 <h3 class="title">Ольга Рєпіна</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -286,13 +363,28 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/img6.jpg"
-                alt="спеціалісти"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/img6.jpg 1x, ./img/img6-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img6-tab.jpg 1x, ./img/img6-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img6-mob.jpg 1x, ./img/img6-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./img/img6-mob.jpg"
+                  alt="спеціалісти"
+                  width="450"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-content">
                 <h3 class="title">Микола Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -349,13 +441,28 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/img7.jpg"
-                alt="спеціалісти"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./img/img7.jpg 1x, ./img/img7-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/img7-tab.jpg 1x, ./img/img7-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/img7-mob.jpg 1x, ./img/img7-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./img/img7-mob.jpg"
+                  alt="спеціалісти"
+                  width="450"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-content">
                 <h3 class="title">Михайло Єрмаков</h3>
                 <p class="team-text">UI Designer</p>
@@ -651,6 +758,14 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

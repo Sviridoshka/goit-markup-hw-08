@@ -1,4 +1,5 @@
 .hard-skills {
+  display: none;
   padding-bottom: 94px;
   .title {
     margin-top: 0;
@@ -9,6 +10,9 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+  }
+  @include desktop {
+    display: flex;
   }
 }
 
